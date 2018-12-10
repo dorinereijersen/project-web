@@ -1,0 +1,303 @@
+/*fonts*/
+
+@font-face {
+    font-family: museosans100;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-100-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans300;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-300-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans500;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-500-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans700;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-700-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans900;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-900-webfont.ttf);
+}
+
+body {
+    font-family: museosans100;
+}
+
+/*navigatie*/
+
+.logo {
+    height: 4em;
+    display: block;
+    margin-top: 0;
+}
+
+nav {
+    background-color: white;
+    position: static;
+    margin: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+nav li img {
+    height: 2em;
+    margin-top: 1em;
+}
+
+/*header*/
+
+header h1 {
+    margin-top: 0em;
+    background-image: url(images/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7em;
+    position: relative;
+    padding: 1rem;
+    color: white;
+    padding-left: 1em;
+    padding-right: 40%;
+    font-family: museosans900;
+    font-size: 32px;
+}
+
+/*filter*/
+
+h2 {
+    font-family: museosans700;
+    font-size: 20pt;
+    color: #6d105c;
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+aside {
+    margin-top: 2em;
+    border: solid #eaeaea 1px;
+    display: block;
+}
+
+aside,
+form {
+    padding: 1em 0em;
+    background-color: #F6F6F6;
+}
+
+aside li {
+    list-style: none;
+}
+
+span {
+    display: block;
+}
+
+aside svg{
+    width: 10%;
+    position: absolute;
+    display: inline-block;
+}
+
+svg .cls-1 {
+    fill: white;
+    
+}
+
+span {
+    background-color: #952D87;
+    color: white;
+    font-family: museosans700;
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .8em 0em;
+    text-align: center;
+}
+
+.trending {
+    border: none;
+    background-color: white;
+    font-family: museosans100;
+    display: block;    
+    font-size: 14pt;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding: 0.5em 0em;
+    box-shadow: 3px 3px 3px 0px #ddd;
+}
+
+.trending img {
+    width: 1.5em;
+    position: absolute;
+    margin-left: -11rem
+}
+
+legend {
+    font-size: 18pt;
+}
+
+label {
+    cursor: pointer;
+}
+
+.genre{
+    margin-left: 2em;
+}
+
+h4{
+    font-size: 12pt;
+    margin-bottom: 0em;
+}
+
+fieldset {
+    border: none;
+    font-size: 14pt;
+}
+
+form ul{
+    padding-left: 0;
+}
+
+select {
+    display: block;
+    border: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding: .5em 2em;
+    font-size: 14pt;
+    font-family: museosans100;
+    box-shadow: 3px 3px 3px 0px #ddd;
+}
+
+#submit {
+    background-color: #FFDF5C;
+    border: none;
+    width: 70%;
+    padding: .5em 0em;
+    box-shadow: 2px 2px 5px 1px #ccc;
+    color: #6d105c;
+    font-family: museosans500;
+    font-size: 18pt;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*verhalen*/
+
+.articles {
+    background: #F6F6F6;
+    border: solid #eaeaea 1px;
+    margin-top: 3rem;
+    padding: 1em 0em;
+}
+
+article h3 {
+    position: absolute;
+    font-family: museosans700;
+    font-size: 24pt;
+    margin-top: 0.5em;
+    color: white;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+article img {
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+    object-position: center center;
+}
+
+article {
+    background: white;
+    border: solid #A6C4C4 1px;
+    margin: 1.5rem 1rem 1rem 1rem;
+    position: relative;
+    font-size: 14pt;
+}
+
+/*tekentjes in article*/
+
+article ul {
+    position: static;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 1rem 2rem 1rem;
+}
+
+article li {
+    position: block;
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+article li img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: -.3em;
+    margin-bottom: -.4em;
+}
+
+article h3,
+article p,
+a {
+    margin-left: 1rem;
+}
+
+article p,
+article a {
+    font-size: 0.8em;
+}
+
+article p {
+    top: 2rem;
+    margin: 1rem;
+}
+
+article a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article button {
+    background-image: url(images/hart.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2em;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    border: none;
+}
+
+footer {
+    margin-bottom: 1em;
+}
+
+.verhaal {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 10px auto;
+
+}
