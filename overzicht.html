@@ -57,22 +57,41 @@
 
     <main>
         <aside>
-            <input type="checkbox" id="filter" name="filter" value="filter">
+
+            <span>
+           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402.05 286.63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <title>filter</title>
+  <rect class="cls-1" x="26.63" y="24.7" width="339.66" height="21" rx="10.5"/>
+  <rect class="cls-1" x="29.61" y="132.53" width="339.66" height="21" rx="10.5"/>
+  <rect class="cls-1" x="29.61" y="240.37" width="339.66" height="21" rx="10.5"/>
+  <circle class="cls-1" cx="35.75" cy="35.75" r="35.75"/>
+  <circle class="cls-1" cx="366.3" cy="143.03" r="35.75"/>
+  <circle class="cls-1" cx="196.46" cy="250.87" r="35.75"/>
+</svg>
             <label class="filter" for="filter">FILTER</label>
+            
+            </span>
+
+
             <form>
-                <button class="trending">Trending
-                <img src="images/trending.png" alt="trending icoon"></button>
                 <fieldset>
                     <legend>Filter op...</legend>
+                    <button class="trending">Trending
+                <img src="images/trending.png" alt="trending icoon"></button>
                     <ul>
                         <li class="genre">
-
-                            <!--<input type="toggle" id="genre" name="genre" value="genre">-->
-                            <label for="genre">Genre</label>
+                            <label for="genre">Taal</label>
                             <select name="genres" id="genre">
-                                <option value="Thriller">Thriller</option>
-                                <option value="Romantisch">Romantisch</option>
-                                <option value="Horror">Horror</option>
+                                <option value="Thriller">Nederlands</option>
+                                <option value="Romantisch">Engels</option>
+                                <option value="Horror">Frans</option>
                             </select>
                         </li>
                         <li>
@@ -85,27 +104,34 @@
                         </li>
                     </ul>
                 </fieldset>
+                <input type="submit" id="submit" name="submit" value="Filters toepassen">
             </form>
+        </aside>
 
+
+        <h2>99 verhalen</h2>
+
+        <!--sorteer functie-->
+
+        <section class="articles">
             <form>
                 <fieldset>
                     <legend>Sorteer op...</legend>
                     <ul>
                         <li class="sorteer">
                             <select name="sorteer" id="sorteren">
-                                <option value="alfabetisch">Alfabetisch</option>
-                                <option value="populariteit">Populariteit</option>
-                                <option value="oud">Oud</option>
-                                <option value="nieuw">Nieuw</option>
+                                <option value="alfabetisch">Nieuw naar oud</option>
+                                <option value="populariteit">Oud naar nieuw</option>
                             </select>
 
                         </li>
                     </ul>
                 </fieldset>
-                <input type="submit" id="submit" name="submit" value="Filters toepassen">
             </form>
-        </aside>
-        <section class="articles">
+
+            <!--verhalen-->
+
+
             <article>
                 <header>
                     <h3>Droom</h3>
