@@ -27,177 +27,304 @@
 
 body {
     font-family: museosans100;
+    margin: 0;
+    
 }
+
+
 
 /*navigatie*/
 
-.logo {
-    height: 4em;
-    display: block;
-    margin-top: 0;
-}
-
 nav {
     background-color: white;
-    position: static;
-    margin: 1em;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    padding: 1em 0em 0.5em 0em;
 }
 
-nav ul {
-    list-style: none;
+
+
+nav img {
+    height: 4.125rem;  
+}
+
+nav p{
+    border-bottom: solid 1px #a6c4c4;
+    width: 90%;
+    position: absolute;
+    
+}
+
+nav svg{
+    width: 3.5rem;
+}
+
+nav ul{
     display: flex;
-    justify-content: space-between;
-    padding-left: 0;
+    justify-content: flex-end;
+    position: absolute;
+    margin: 0;
+    right: 1em;
+    list-style: none;
 }
 
-nav li img {
-    height: 2em;
-    margin-top: 1em;
+nav li:first-of-type{
+    width: 8
 }
+
+
 
 /*header*/
 
 header h1 {
     margin-top: 0em;
+    margin-bottom:-5em;
     background-image: url(images/header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 7em;
+    height: 10em;
     position: relative;
-    padding: 1rem;
+    padding: 1em;
     color: white;
     padding-left: 1em;
-    padding-right: 40%;
+    padding-right: 25%;
     font-family: museosans900;
-    font-size: 32px;
+    font-size: 2em;
+    z-index: -1;
+}
+
+
+
+/*aanbevolen verhaal*/
+
+#aanbevolen{
+    margin-left: 1rem;
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+
+h5 {
+    margin-left: 1rem;
+    margin-top: 0em;
+    font-family: museosans100;
+    color: #6d105c;
+}
+
+#aanbevolenfilter article{
+    height: 19em;
+    margin-top: 3rem;
+}
+
+section section{
+    background-color: #f6f6f6;
+    border: solid #eaeaea 1px;
+    margin-top: 2rem;
+    padding: 1em 0em;
+    width: 20em;
+    height: 27.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*media queries*/
+
+@media only screen and (min-width: 48em) {
+  #aanbevolenfilter{
+     display: flex;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+    }
+    .articles{
+        width: 43em;
+    }
+    main {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+    
+}
+
+@media only screen and (min-width: 80em) {
+  #aanbevolenfilter{
+     display: flex;
+          flex-direction: row-reverse;
+        
+    }
+    #filter {
+        width: 32.4em;
+    }
+    .articles{
+        width: 43em;
+    }
+    main {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+    body{
+        margin: em;
+        border: solid 8px #99258d;
+    }
+    
+}
+
+#verder{
+    background-color: #FFDF5C;
+    border: none;
+    width: 14em;
+    height: 2em;
+    box-shadow: 2px 2px 5px 1px #ccc;
+    color: #6d105c;
+    font-family: museosans500;
+    font-size: 1.2em;
+    margin-top: -1.35em;
+    margin-left: 1.3em;
+    position: absolute;
 }
 
 /*filter*/
 
+#filter{
+    background-color: none;;
+    border: none;
+    width: 20.4em;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #eaeaea 1px;
+}
+
 h2 {
     font-family: museosans700;
-    font-size: 20pt;
+    font-size: 1.5em;
     color: #6d105c;
     margin-top: 1.5em;
-    margin-left: .5em;
-}
-
-aside {
-    margin-top: 2em;
-    border: solid #eaeaea 1px;
-    display: block;
-}
-
-aside,
-form {
-    padding: 1em 0em;
-    background-color: #F6F6F6;
-}
-
-aside li {
-    list-style: none;
-}
-
-span {
-    display: block;
-}
-
-aside svg{
-    width: 10%;
-    position: absolute;
     margin-left: 1em;
 }
 
-svg .cls-1 {
-    fill: white;
-    
-}
-
-span {
+#filter form header{
     background-color: #952D87;
     color: white;
     font-family: museosans700;
-    display: block;
+    display: flex;
+    height: 2.5em;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: .8em 0em;
-    text-align: center;
-    position: relative;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+    }
+
+toggle{
+    position: absolute;
+}
+
+#filter,
+form {
+    padding: 1em 0em;
+}
+
+#filter fieldset legend {
+    font-size: 1em;
+    font-family: museosans500;
+    margin-bottom: -1em;
+}
+
+fieldset:last-of-type{
+    
 }
 
 .trending {
     border: none;
     background-color: white;
     font-family: museosans100;
-    display: block;    
-    font-size: 14pt;
-    width: 90%;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
     padding: 0.5em 0em;
     box-shadow: 3px 3px 3px 0px #ddd;
 }
+    .trending img {
+        width: 1.5em;
+        position: absolute;
+        margin-left: -9.5rem;
+    }
 
-.trending img {
-    width: 1.5em;
-    position: absolute;
-    margin-left: -11rem
+#filter li {
+    list-style: none;
+    padding-left: 0em;
+}
+    #filter li .verhaal{
+        margin-left: 1em;
+    }
+
+    #filter li:first-of-type label {
+        font-family: museosans500;
+    }
+
+    #filter li.genre{
+        padding-left: 0em;
+        margin: auto;
+        width: 97%;
+    }
+
+#toepassen {
+    background-color: #FFDF5C;
+    border: none;
+    width: 14em;
+    height: 2em;
+    box-shadow: 2px 2px 5px 1px #ccc;
+    color: #6d105c;
+    font-family: museosans500;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-left: 1.3em;
 }
 
 legend {
-    font-size: 18pt;
-}
-
-label {
-    cursor: pointer;
-}
-
-.genre{
-    margin-left: 2em;
-}
-
-h4{
-    font-size: 12pt;
-    margin-bottom: 0em;
+    font-size: 1em;
+    font-family: museosans500;
 }
 
 fieldset {
     border: none;
-    font-size: 14pt;
+    font-size: 1em;
 }
 
 form ul{
     padding-left: 0;
+    margin-bottom: 0em;
 }
 
 select {
     display: block;
-    border: 0px;
+    border: 0;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     margin-bottom: 3em;
     padding: .5em 2em;
-    font-size: 14pt;
+    font-size: 1em;
     font-family: museosans100;
     box-shadow: 3px 3px 3px 0px #ddd;
 }
 
-#submit {
-    background-color: #FFDF5C;
-    border: none;
-    width: 70%;
-    padding: .5em 0em;
-    box-shadow: 2px 2px 5px 1px #ccc;
-    color: #6d105c;
-    font-family: museosans500;
-    font-size: 18pt;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.sorteer {
+    list-style: none;
+}
+
+.verhaal {
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    margin: 10px auto;
 }
 
 /*verhalen*/
@@ -205,17 +332,21 @@ select {
 .articles {
     background: #F6F6F6;
     border: solid #eaeaea 1px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1em 0em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 article h3 {
     position: absolute;
-    font-family: museosans700;
-    font-size: 24pt;
-    margin-top: 0.5em;
-    color: white;
-    text-shadow: 1px 1px 5px #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 7em;
+    color: black;
+    padding-bottom: .2em;
+    border-bottom: gold solid 4px;
 }
 
 article img {
@@ -225,13 +356,27 @@ article img {
     object-position: center center;
 }
 
+article svg{
+    position: absolute;
+    width: 3em;
+    margin-left: -2.5em;
+}
+
+article svg:hover{
+    width: 3.3em;
+}
+
 article {
     background: white;
     border: solid #A6C4C4 1px;
-    margin: 1.5rem 1rem 1rem 1rem;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 2rem;
     position: relative;
-    font-size: 14pt;
-}
+    font-size: 1em;
+    width: 18rem;
+    height: 18rem;
+    }
 
 /*tekentjes in article*/
 
@@ -242,18 +387,19 @@ article ul {
     display: flex;
     justify-content: space-between;
     margin: .5rem 1rem 2rem 1rem;
+    margin-bottom: 1em;
 }
 
 article li {
     position: block;
     font-size: 0.8em;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 article li img {
     width: 1.5em;
     height: 1.5em;
-    margin-top: -.3em;
+    margin-top: 3em;
     margin-bottom: -.4em;
 }
 
@@ -269,36 +415,25 @@ article a {
 }
 
 article p {
-    top: 2rem;
-    margin: 1rem;
-}
-
-article a {
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
+    margin: .5em 1em;
+    margin-left: 1rem;
 }
 
 article button {
     background-image: url(images/hart.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 2em;
+    padding: 1.5em;
     position: absolute;
     top: -1rem;
     right: -1rem;
     border: none;
+    color: #6A1E5D;
+    font-family: museosans700;
+    text-align: center;
+    box-shadow: 1px 1px 3px .5px #e3e3e3;
 }
 
 footer {
-    margin-bottom: 1em;
-}
-
-.verhaal {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    margin: 10px auto;
-
+    text-align: center;
 }
