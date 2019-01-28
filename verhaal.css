@@ -1,0 +1,98 @@
+/*fonts*/
+
+@font-face {
+    font-family: museosans100;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-100-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans300;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-300-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans500;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-500-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans700;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-700-webfont.woff);
+}
+
+@font-face {
+    font-family: museosans900;
+    src: url(https://valholl-prd.wowair.com/fonts/museo-sans/museosans-900-webfont.ttf);
+}
+
+
+body {
+    font-family: museosans100;
+    margin: 0;
+    position: relative;
+    
+}
+
+/*navigatie*/
+
+nav {
+    background-color: white;
+    margin:0 1em 1em 1em;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    padding: 1em 0em 0.5em 0em;
+    border-bottom: 1px solid #A6C4C4;
+    height: 3.1em;
+}
+
+nav img {
+    height: 4.125rem; 
+}
+
+nav a{
+    margin: 0;
+}
+
+nav svg{
+    width:2.8rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content:;
+    position: absolute;
+    margin-top: 0.5em;
+    right: 0em;
+    list-style: none;
+}
+
+/*verhaal*/
+
+main img {
+    width: 100%; 
+}
+
+/*footer balk*/
+
+footer {
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    background-image: image(images/download.png);
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 1em;
+}
+
+footer img {
+    height: 1rem;
+    margin-top: 1em;
+}
