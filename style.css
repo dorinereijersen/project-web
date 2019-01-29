@@ -28,7 +28,7 @@
 body {
     font-family: museosans100;
     margin: 0;
-    
+
 }
 
 
@@ -37,9 +37,9 @@ body {
 
 nav {
     background-color: white;
-    margin:0 1em     1em 1em;
+    margin: 0 1em 1em 1em;
     position: relative;
-    display: flex; 
+    display: flex;
     justify-content: center;
     padding: 1em 0em 0.5em 0em;
     border-bottom: 1px solid #A6C4C4;
@@ -47,18 +47,18 @@ nav {
 }
 
 nav img {
-    height: 4.125rem; 
+    height: 4.125rem;
 }
 
-nav a{
+nav a {
     margin: 0;
 }
 
-nav svg{
-    width:2.8rem;
+nav svg {
+    width: 2.8rem;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -91,7 +91,7 @@ header h1 {
 
 /*aanbevolen verhaal*/
 
-h2#aanbevolen{
+h2#aanbevolen {
     margin-left: 1rem;
     margin-bottom: 0em;
     margin-top: 1em;
@@ -104,12 +104,12 @@ h5 {
     color: #6d105c;
 }
 
-section#aanbevolenfilter article{
+section#aanbevolenfilter article {
     height: 19em;
     margin-top: 3rem;
 }
 
-section section{
+section section {
     background-color: #f6f6f6;
     border: solid #eaeaea 1px;
     margin-top: 2rem;
@@ -124,75 +124,76 @@ section section{
 /*media queries*/
 
 @media only screen and (min-width: 48em) {
-      #aanbevolenfilter {
-          display: grid !important;
-          grid-template-columns: 1fr 1fr;
-      }
+    #aanbevolenfilter {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
 
-      section#filter {
-          grid-column-start: 1;
-          grid-row-start: 1;
-      }
+    section#filter {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
 
-      section#abv {
-          grid-column-start: 2;
-          grid-row-start: 1;
-      }
+    section#abv {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
 
-      .articles {
-          width: 43em;
-      }
+    .articles {
+        width: 43em;
+    }
 
-      main {
-          display: grid !important;
-          grid-template-columns: 1fr 1fr;
-          grid-column-gap: 2em;
-      }
+    main {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+    }
 
-      header h1 {
-          font-size: 3em;
-          background-size: 100% 80%;
-      }
-    
+    header h1 {
+        font-size: 3em;
+        background-size: 100% 80%;
+    }
+
 }
 
 @media only screen and (min-width: 80em) {
-      #aanbevolenfilter {
-          display: flex;
-          flex-direction: row-reverse;
-      }
+    #aanbevolenfilter {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
-      #filter {
-          width: 32.4em;
-      }
+    #filter {
+        width: 32.4em;
+    }
 
-      .articles {
-          width: 43em;
-      }
+    .articles {
+        width: 43em;
+    }
 
-      main {
-          display: grid !important;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-column-gap: 2em;
-      }
+    main {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2em;
+    }
 
-      body {
-          margin: em;
-          border: solid 8px #99258d;
-      }
+    body {
+        margin: em;
+        border: solid 8px #99258d;
+    }
 
-      header h1 {
-          font-size: 5em;
-          background-size: 100% 60%;
-      }
-    
+    header h1 {
+        font-size: 5em;
+        background-size: 100% 60%;
+    }
+
 }
 
 
 /*filter*/
 
-section#filter{
-    background-color: none;;
+section#filter {
+    background-color: none;
+    ;
     border: none;
     width: 20.4em;
     margin-left: auto;
@@ -208,7 +209,7 @@ h2 {
     margin-left: 1em;
 }
 
-section#filter form header{
+section#filter form header {
     background-color: #952D87;
     color: white;
     font-family: museosans700;
@@ -220,7 +221,7 @@ section#filter form header{
     margin-bottom: 1em;
     justify-content: center;
     align-items: center;
-    }
+}
 
 section#filter,
 form {
@@ -245,28 +246,30 @@ button.trending {
     padding: 0.5em 0em;
     box-shadow: 3px 3px 3px 0px #ddd;
 }
-    button.trending img {
-        width: 1.5em;
-        position: absolute;
-        margin-left: -9.5rem;
-    }
+
+button.trending img {
+    width: 1.5em;
+    position: absolute;
+    margin-left: -9.5rem;
+}
 
 section#filter li {
     list-style: none;
     padding-left: 0em;
 }
-    section#filter li .verhaal{
-        margin-left: 1em;
-    }
 
-    section#filter li:first-of-type label {
-        font-family: museosans500;
-    }
+section#filter li .verhaal {
+    margin-left: 1em;
+}
 
-    section#filter li.genre{
-        padding-left: 0em;
-        margin: auto;
-    }
+section#filter li:first-of-type label {
+    font-family: museosans500;
+}
+
+section#filter li.genre {
+    padding-left: 0em;
+    margin: auto;
+}
 
 button#toepassen {
     background-color: #FFDF5C;
@@ -291,12 +294,12 @@ fieldset {
     font-size: 1em;
 }
 
-form ul{
+form ul {
     padding-left: 0;
     margin-bottom: 0em;
 }
 
-form li{
+form li {
     list-style: none;
 }
 
@@ -335,7 +338,7 @@ form input {
 
 article a {
     margin: 0;
-    
+
 }
 
 article h3 {
@@ -355,7 +358,7 @@ article img {
     object-position: center center;
 }
 
-article svg{
+article svg {
     position: absolute;
 }
 
@@ -369,7 +372,7 @@ article {
     font-size: 1em;
     height: 18rem;
     width: 86%;
-    }
+}
 
 /*tekentjes in article*/
 
@@ -394,12 +397,12 @@ article li img {
     margin-bottom: -.35rem;
 }
 
-article ul li:last-of-type{
+article ul li:last-of-type {
     position: absolute;
     right: 0rem;
 }
 
-img.download{
+img.download {
     margin: 0;
     padding-right: 1rem;
     width: 2rem;
@@ -412,7 +415,7 @@ a {
     margin-left: 1rem;
 }
 
-article h3{
+article h3 {
     margin-top: 8.7rem;
 }
 
@@ -426,22 +429,23 @@ article p {
     margin-left: 1rem;
 }
 
-    article button {
-        background-color: #FFDF5C;
-        position: absolute;
-        top: -1rem;
-        right: -1rem;
-        border: none;
-        color: #952D87;
-        font-family: museosans700;
-        text-align: center;
-        box-shadow: 1px 1px 3px .5px #e3e3e3;
-        height: 3.5rem;
-        width: 3.5rem;
-        text-align: center;
-        align-items: flex-start;
-        
-    }
+/*opmaak voor javascript hartje*/
+
+article button {
+    background-color: #FFDF5C;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    border: none;
+    color: #952D87;
+    font-family: museosans700;
+    text-align: center;
+    box-shadow: 1px 1px 3px .5px #e3e3e3;
+    height: 3.5rem;
+    width: 3.5rem;
+    text-align: center;
+    align-items: flex-start
+}
 
 article button svg {
     display: flex;
@@ -453,10 +457,10 @@ article button svg {
 }
 
 article button svg path {
-    fill:#ffdf5c;
-    stroke:#952D87;
-    stroke-miterlimit:10;
-    stroke-width:65px;
+    fill: #ffdf5c;
+    stroke: #952D87;
+    stroke-miterlimit: 10;
+    stroke-width: 65px;
 }
 
 article button svg path.stijl {
@@ -474,19 +478,16 @@ article button span {
     margin-top: -.5em;
 }
 
-article button span.stijl{
+article button span.stijl {
     color: #ffdf5c;
 }
 
-@keyframes hoi{
-    100%{
+@keyframes hoi {
+    100% {
         transform: scale(1.2);
     }
 }
 
-/*<style>.cls-1{fill:#ffdf5c;stroke:#6a1f5d;stroke-miterlimit:10;stroke-width:51px;}</style>*/
-
 footer {
     text-align: center;
 }
-
